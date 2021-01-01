@@ -47,6 +47,7 @@
             >;
                                //Left Enc: Vol Up  | Vol Down | Right Enc: Next, Previous.
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
+        };
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
