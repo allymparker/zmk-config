@@ -27,7 +27,7 @@
                  &kp LGUI &kp LALT &kp LCTRL &kp RET    &mo 1       &mo 2     &kp SPACE &kp RCTRL &kp RALT  &kp RGUI
             >;
                                //Left Enc: Vol Up  | Vol Down | Right Enc: Next, Previous.
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
+            sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_NEXT C_PREV>;
         };
 
         lower_layer {
