@@ -56,9 +56,9 @@
 // |        | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      | HOME |       | END  |       |       |
 //                 |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
-&trans      &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
-&trans      &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4             &trans    &trans    &trans   &trans     &trans  &trans
+&trans      &kp INS       &kp PSCRN    &kp K_CMENU   &trans         &trans                   &kp PG_UP &kp RC(LEFT) &kp UP   &kp RC(RIGHT) &trans  &trans
+&trans      &kp LALT      &kp LCTRL    &kp LSHFT     &trans         &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT  &kp DEL &kp BSPC
 &trans      &kp C_AC_UNDO &kp C_AC_CUT &kp C_AC_COPY &kp C_AC_PASTE &trans  &trans   &trans  &trans    &kp HOME  &trans   &kp END     &trans  &trans
                           &trans       &trans        &trans         &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
