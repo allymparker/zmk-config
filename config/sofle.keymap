@@ -52,13 +52,13 @@
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR   | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
 // |        | INS  | PSCR | GUI   |       |      |                | PGUP | PWrd |   ^   | NWrd |       |       |
-// |        | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
+// |        | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |       |       |
 // |        | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      | HOME |       | END  |       |       |
 //                 |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4             &trans    &trans    &trans   &trans     &trans  &trans
 &trans      &kp INS       &kp PSCRN    &kp K_CMENU   &trans         &trans                   &kp PG_UP &kp RC(LEFT) &kp UP   &kp RC(RIGHT) &trans  &trans
-&trans      &kp LALT      &kp LCTRL    &kp LSHFT     &trans         &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT  &kp DEL &kp BSPC
+&trans      &kp LALT      &kp LCTRL    &kp LSHFT     &trans         &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT  &trans &trans
 &trans      &kp LC(Z)     &kp LC(X)    &kp LC(C)     &kp LC(V)      &trans  &trans   &trans  &trans    &kp HOME  &trans   &kp END    &trans  &trans
                           &trans       &trans        &trans         &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
