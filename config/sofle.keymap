@@ -27,14 +27,14 @@
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   |                                |  6   |  7    |  8    |  9   |   0   | DEL   |
-// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                |  Y   |  U    |  I    |  O   |   P   | BKSPC |
+// |  ESC  |  1  |  2  |  3   |  4   |  5   |                                |  6   |  7    |  8    |  9   |   0   |       |
+// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                |  Y   |  U    |  I    |  O   |   P   |       |
 // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                |  H   |  J    |  K    |  L   |   ;   |   '   |
 // | SHFT| |  Z  |  X  |  C   |  V   |  B   |            MUTE  |  | PLAY     |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 // |       |     | GUI | ALT  | CTRL |ENTER |            LOWER |  | RAISE    |SPACE | CTRL  | ALT   | GUI  |
             bindings = <
-&kp ESC         &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6    &kp N7    &kp N8    &kp N9   &kp N0   &kp DEL
-&kp TAB         &kp Q  &kp W    &kp E    &kp R     &kp T                            &kp Y     &kp U     &kp I     &kp O    &kp P    &kp BSPC
+&kp ESC         &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6    &kp N7    &kp N8    &kp N9   &kp N0   &trans
+&kp TAB         &kp Q  &kp W    &kp E    &kp R     &kp T                            &kp Y     &kp U     &kp I     &kp O    &kp P    &trans
 &kp ESC         &kp A  &kp S    &kp D    &kp F     &kp G                            &kp H     &kp J     &kp K     &kp L    &kp SEMI &kp SQT
 &mt LSHFT PIPE2 &kp Z  &kp X    &kp C    &kp V     &kp B      &kp C_PP  &kp C_MUTE  &kp N     &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                  &kp LGUI &kp LALT &kp LCTRL &tp LC(RET) RET  &mo 1     &mo 2       &kp SPACE &kp RCTRL &kp RALT  &kp RGUI
@@ -67,11 +67,11 @@
 // |        | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      | HOME |       | END  |       |       |
 // |        |      |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4             &trans    &trans    &trans   &trans     &trans  &trans
-&trans      &kp INS       &kp PSCRN    &trans        &trans         &trans                   &kp PG_UP &kp RC(LEFT) &kp UP   &kp RC(RIGHT) &trans  &trans
-&trans      &trans        &trans       &trans        &trans         &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT  &trans &trans
-&trans      &kp LC(Z)     &kp LC(X)    &kp LC(C)     &kp LC(V)      &trans  &trans   &trans  &trans    &kp HOME  &trans   &kp END    &trans  &trans
-                          &trans       &trans        &trans         &trans  &trans   &trans  &trans    &trans    &trans   &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4             &trans    &trans       &trans   &trans         &trans  &trans
+&trans      &kp INS       &kp PSCRN    &trans        &trans         &trans                   &kp PG_UP &kp RC(LEFT) &kp UP   &kp RC(RIGHT)  &trans  &trans
+&trans      &trans        &trans       &trans        &trans         &kp CLCK                 &kp PG_DN &kp LEFT     &kp DOWN &kp RIGHT      &trans  &trans
+&trans      &kp LC(Z)     &kp LC(X)    &kp LC(C)     &kp LC(V)      &trans  &trans   &trans  &trans    &kp HOME     &trans   &kp END        &trans  &trans
+                          &trans       &trans        &trans         &trans  &trans   &trans  &trans    &trans       &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_VOL_UP C_VOL_DN>;
