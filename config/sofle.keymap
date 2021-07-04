@@ -62,14 +62,14 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |        | BT0  | BT1  |  BT2  |  BT3  |  BT4 |                |      |      |       |      |       |       |
-// |        | INS  | PSCR |  F13  | F14   |      |                | PGUP | PWrd |   ^   | NWrd |       |       |
-// |        |      | WinL | WinUp | WinR  | CAPS |                | PGDN |   <- |   v   |  ->  |       |       |
+// |        | INS  | PSCR | ShfTab| Tab   |      |                | PGUP | PWrd |   ^   | NWrd |       |       |
+// |        | ALT  | WinL | WinUp | WinR  | CAPS |                | PGDN |   <- |   v   |  ->  |       |       |
 // |        | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      | HOME |       | END  |       |       |
 // |        |      |      |       |       |      |      |  |      |      |      |       |      |BTCLR   
             bindings = <
 &trans      &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4             &trans    &trans       &trans   &trans         &trans  &trans
-&trans      &kp INS       &kp PSCRN    &kp F13       &kp F14        &trans                   &kp PG_UP &kp RC(LEFT) &kp UP   &kp RC(RIGHT)  &trans  &trans
-&trans      &trans        &kp LG(LEFT) &kp LG(UP)    &kp LG(RIGHT)  &kp CLCK                 &kp PG_DN &kp LEFT     &kp DOWN &kp RIGHT      &trans  &trans
+&trans      &kp INS       &kp PSCRN    &kp LS(TAB)   &kp TAB        &trans                   &kp PG_UP &kp RC(LEFT) &kp UP   &kp RC(RIGHT)  &trans  &trans
+&trans      &kp LALT      &kp LG(LEFT) &kp LG(UP)    &kp LG(RIGHT)  &kp CLCK                 &kp PG_DN &kp LEFT     &kp DOWN &kp RIGHT      &trans  &trans
 &trans      &kp LC(Z)     &kp LC(X)    &kp LC(C)     &kp LC(V)      &trans  &trans   &trans  &trans    &kp HOME     &trans   &kp END        &trans  &trans
                           &trans       &trans        &trans         &trans  &trans   &trans  &trans    &trans       &trans   &bt BT_CLR
             >;
