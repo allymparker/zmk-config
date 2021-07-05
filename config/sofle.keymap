@@ -56,7 +56,8 @@
 &kp NON_US_BSLH &kp AMPS  &kp PRCNT &kp DLLR &kp LPAR  &kp RPAR &trans   &trans &kp LBKT &kp RBKT &kp LT    &kp GT    &kp QMARK &kp TILDE2
                           &trans    &trans   &trans    &trans   &trans   &kp LC(BSPC) &trans &kp DEL  &trans    &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -74,7 +75,7 @@
                           &trans       &trans        &trans         &kp LALT &trans   &trans  &trans    &trans       &trans   &bt BT_CLR
             >;
 
-            sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
