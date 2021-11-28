@@ -125,7 +125,7 @@
 &trans      &trans        &trans       &kp LCTRL     &trans         &trans                             &kp PG_UP &kp LA(LEFT) &kp UP   &kp LA(RIGHT)  &trans  &trans
 &trans      &kp LA(SPACE) &kp LS(TAB)  &kp LGUI      &kp TAB        &kp CLCK                           &kp PG_DN &kp LEFT     &kp DOWN &kp RIGHT      &trans  &trans
 &trans      &kp LG(Z)     &trans       &trans        &trans         &trans         &trans    &trans    &trans    &kp HOME     &trans   &kp END        &trans  &trans
-                          &kp INS      &kp PSCRN     &kp LG(X)      &kp LG(C)      &kp LG(V) &trans    &trans    &trans       &trans   &bt BT_CLR
+                          &kp INS      &kp LS(LG(LC(4))) &kp LG(X)  &kp LG(C)      &kp LG(V) &trans    &trans    &trans       &trans   &bt BT_CLR
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
