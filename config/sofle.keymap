@@ -107,7 +107,7 @@
 &kp GRAVE       &kp N1    &kp N2    &kp N3   &kp N4    &kp N5                   &kp N6   &kp N7   &kp N8    &kp N9    &kp N0    &kp F12
 &kp RBRC        &kp EXCL  &kp AT    &kp HASH &kp LBRC  &kp UNDER                &kp STAR &kp PLUS &kp MINUS &kp EQUAL &kp DQT   &kp NON_US_HASH
 &kp NON_US_BSLH &kp AMPS  &kp PRCNT &kp DLLR &kp LPAR  &kp RPAR &trans   &trans &kp LBKT &kp RBKT &kp LT    &kp GT    &kp QMARK &kp TILDE2
-                         &bt BT_CLR &trans   &trans    &trans   &trans   &kp LC(BSPC) &trans &kp DEL  &trans    &trans
+                         &bt BT_CLR &trans   &trans    &trans   &trans   &kp LA(BSPC) &trans &kp DEL  &trans    &trans
             >;
             
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -117,15 +117,15 @@
 // ------------------------------------------------------------------------------------------------------------
 // |        | BT0  | BT1  |  BT2  |  BT3  |  BT4 |                |      |      |       |      |       |       |
 // |        |      |      | CTRL  |       |      |                | PGUP | PWrd |   ^   | NWrd |       |       |
-// |        | run  | STAB | ALT   | TAB   | CAPS |                | PGDN |   <- |   v   |  ->  |       |       |
-// |        | UNDO |      | LGUI  |       |      |      |  |      |      | HOME |       | END  |       |       |
+// |        | run  | STAB | CMD   | TAB   | CAPS |                | PGDN |   <- |   v   |  ->  |       |       |
+// |        | UNDO |      |       |       |      |      |  |      |      | HOME |       | END  |       |       |
 // |        |      | INS  | PSCR  | CUT   | COPY |PASTE |  |      |      |      |       |      |BTCLR   
             bindings = <
 &trans      &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                       &trans    &trans       &trans   &trans         &trans  &trans
-&trans      &trans        &trans       &kp LCTRL     &trans         &trans                             &kp PG_UP &kp RC(LEFT) &kp UP   &kp RC(RIGHT)  &trans  &trans
-&trans      &kp LA(SPACE) &kp LS(TAB)  &kp LALT      &kp TAB        &kp CLCK                           &kp PG_DN &kp LEFT     &kp DOWN &kp RIGHT      &trans  &trans
-&trans      &kp LC(Z)     &trans       &kp LGUI      &trans         &trans         &trans    &trans    &trans    &kp HOME     &trans   &kp END        &trans  &trans
-                          &kp INS      &kp PSCRN     &kp LC(X)      &kp LC(C)      &kp LC(V) &trans    &trans    &trans       &trans   &bt BT_CLR
+&trans      &trans        &trans       &kp LCTRL     &trans         &trans                             &kp PG_UP &kp LA(LEFT) &kp UP   &kp LA(RIGHT)  &trans  &trans
+&trans      &kp LA(SPACE) &kp LS(TAB)  &kp LGUI      &kp TAB        &kp CLCK                           &kp PG_DN &kp LEFT     &kp DOWN &kp RIGHT      &trans  &trans
+&trans      &kp LG(Z)     &trans       &trans        &trans         &trans         &trans    &trans    &trans    &kp HOME     &trans   &kp END        &trans  &trans
+                          &kp INS      &kp PSCRN     &kp LG(X)      &kp LG(C)      &kp LG(V) &trans    &trans    &trans       &trans   &bt BT_CLR
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
