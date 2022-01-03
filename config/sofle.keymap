@@ -34,7 +34,7 @@
 // 	| SFT/| |   Z   |   X   |   C   |   V   |   B   |       /*    */       |   N   |   M   |   ,   |   .   |   /   | SFT   |
 // 	                |  GUI  |  ALT  |  CTRL | ENT/np|  lwr  /*    */ rs/BSP|  SPC  |       |       | Zmute |      
             bindings = <
-	&kp GRAVE		&trans		&trans		&trans		&trans			&trans			/**/			&trans		&trans		&trans		&trans		&trans		&to 4
+	&kp GRAVE		&trans		&trans		&trans		&trans			&trans			/**/			&trans		&trans		&trans		&trans		&trans		&sl 4
 	&kp TAB			&kp Q		&kp W		&kp E		&kp R			&kp T			/**/			&kp Y		&kp U		&kp I		&kp O		&kp P		&to 5 
 	&kp ESC			&kp A		&kp S		&kp D		&kp F			&kp G			/**/			&kp H		&kp J		&kp K		&kp L		&kp SEMI	&kp SQT
 	&mt LSHFT PIPE2 	&kp Z		&kp X		&kp C		&kp V			&kp B		&kp C_PP/**/	&trans 		&kp N		&kp M		&kp COMMA	&kp DOT		&kp FSLH	&kp RSHIFT
@@ -124,7 +124,7 @@
 // 	| SFT/| |   Z   |   X   |   C   |   V   |   B   |       /*    */       |   N   |   M   |   ,   |   .   |   /   | SFT   |
 // 	                |  GUI  |  ALT  |  CTRL | ENT/np|  lwr  /*    */ rs/BSP|  SPC  |       |       | Zmute |      
             bindings = <
-	&kp GRAVE		&trans		&trans		&trans		&trans			&trans			/**/			&trans		&trans		&trans		&trans		&trans		&to 4
+	&kp GRAVE		&trans		&trans		&trans		&trans			&trans			/**/			&trans		&trans		&trans		&trans		&trans		&sl 4
 	&kp TAB			&kp Q		&kp W		&kp E		&kp R			&kp T			/**/			&kp Y		&kp U		&kp I		&kp O		&kp P		&to 0 
 	&kp ESC			&kp A		&kp S		&kp D		&kp F			&kp G			/**/			&kp H		&kp J		&kp K		&kp L		&kp SEMI	&kp SQT
 	&mt LSHFT PIPE	 	&kp Z		&kp X		&kp C		&kp V			&kp B		&kp C_PP/**/	&trans 		&kp N		&kp M		&kp COMMA	&kp DOT		&kp FSLH	&kp RSHIFT
