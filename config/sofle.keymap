@@ -62,6 +62,24 @@
         };
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        raise_layer {
+// ---------------------------------------------------------------------------------------------------------------------
+// 	|       |       |       |       |       |       |       /*    */        |       |       |       |       |       |       |
+// 	|       |       |       |       |       |       |       /*    */        |  C+b  | PWord | Nword | PG UP |       |       |
+// 	|       | UNDO  |  CUT  | COPY  | PASTE | CAPS  |       /*    */        |   <   |   v   |   ^   |   >   |       |       |
+// 	|       |       |       |       |       |       | MUTE  /*    */        |  C+f  | HOME  |  END  | PG DN |       |       |
+// 	                | INS   | PRT   |       |       |       /*    */        |       |       |       |       |      
+            bindings = <
+	&trans		&trans		&trans		&trans		&trans		&trans				/**/			&trans		&trans		&trans		&trans		&trans		&trans
+	&trans		&trans		&trans		&trans		&trans		&trans				/**/			&kp LC(B)	&kp LC(LEFT)	&kp LC(RIGHT)	&kp PG_UP	&trans		&trans
+	&trans		&kp LC(Z)	&kp LC(X)	&kp LC(C)	&kp LC(P)	&kp CLCK			/**/			&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&trans		&trans
+	&trans		&trans		&trans		&trans		&trans		&trans		&kp C_MUTE	/**/	&trans		&kp LC(F)	&kp HOME	&kp END		&kp PG_DN	&trans		&trans
+					&kp INS		&kp PSCRN	&trans		&trans		&trans		/**/	&trans		&trans		&trans		&trans		&trans
+            >;
+            sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         trans_layer {
 // ---------------------------------------------------------------------------------------------------------------------
 // 	|       |       |       |       |       |       |       /*    */        |       |       |       |       |       |       |
