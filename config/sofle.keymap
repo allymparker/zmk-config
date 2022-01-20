@@ -72,7 +72,7 @@
             bindings = <
 	&trans		&trans		&trans		&trans		&trans		&trans				/**/			&trans		&trans		&trans		&trans		&trans		&trans
 	&trans		&trans		&trans		&trans		&trans		&trans				/**/			&kp LC(B)	&kp LC(LEFT)	&kp LC(RIGHT)	&kp PG_UP	&trans		&trans
-	&trans		&kp LC(Z)	&kp LC(X)	&kp LC(C)	&kp LC(P)	&kp CLCK			/**/			&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&trans		&trans
+	&trans		&kp LC(Z)	&kp LC(X)	&kp LC(C)	&kp LC(V)	&kp CLCK			/**/			&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&trans		&trans
 	&trans		&trans		&trans		&trans		&trans		&trans		&kp C_MUTE	/**/	&trans		&kp LC(F)	&kp HOME	&kp END		&kp PG_DN	&trans		&trans
 					&kp INS		&kp PSCRN	&trans		&kp LC(RET)	&trans		/**/	&trans		&trans		&trans		&trans		&trans
             >;
@@ -162,7 +162,7 @@
             bindings = <
 	&trans		&trans		&trans		&trans		&trans		&trans				/**/			&trans		&trans		&trans		&trans		&trans		&trans
 	&trans		&trans		&trans		&trans		&trans		&trans				/**/			&kp LC(B)	&kp LA(LEFT)	&kp LA(RIGHT)	&trans		&trans		&trans
-	&trans		&kp LG(Z)	&kp LG(X)	&kp LG(C)	&kp LG(P)	&kp CLCK			/**/			&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&trans		&trans
+	&trans		&kp LG(Z)	&kp LG(X)	&kp LG(C)	&kp LG(V)	&kp CLCK			/**/			&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&trans		&trans
 	&trans		&trans		&trans		&trans		&trans		&trans		&kp K_MUTE	/**/	&trans		&kp LC(F)	&kp HOME	&kp END		&trans		&trans		&trans
 					&kp INS		&kp LS(LG(LC(N4))) &trans	&kp LG(RET)	&trans		/**/	&trans		&trans		&trans		&trans		&trans
             >;
