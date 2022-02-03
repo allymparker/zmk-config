@@ -70,11 +70,11 @@
 // 	|       |       |       | PREV  | NEXT  |       |       /*    */        |  C+f  | HOME  |  END  |       |       |       |
 // 	                | INS   | PRT   |       | CMDENT|       /*    */        |       |       |       |       |      
             bindings = <
-	&none		&none		&none		&none		&none		&none				/**/			&none		&none		&none		&none		&none		&none
-	&none		&none		&none		&kp C_VOL_DN	&kp C_VOL_UP	&kp K_MUTE			/**/			&kp LC(B)	&kp LA(LEFT)	&kp LA(RIGHT)	&none		&none		&kp PG_UP
-	&none		&kp LG(Z)	&kp LG(X)	&kp LG(C)	&kp LG(V)	&kp CLCK			/**/			&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&none		&kp PG_DN
-	&none		&none		&none		&kp C_PREV	&kp C_NEXT	&none		&none		/**/	&none		&kp LC(F)	&kp HOME	&kp END		&none		&none		&none
-					&kp INS		MAC_PSCR	&none		&kp LG(RET)	&none		/**/	&none		&none		&none		&none		&none
+	&none	&none		&none		&none		&none		&none			/**/		&none		&none		&none		&none		&none	&none
+	&none	&none		&none		&kp C_VOL_DN	&kp C_VOL_UP	&kp K_MUTE		/**/		&kp LC(B)	&kp LA(LEFT)	&kp LA(RIGHT)	&none		&none	&kp PG_UP
+	&none	&kp LG(Z)	&kp LG(X)	&kp LG(C)	&kp LG(V)	&kp CLCK		/**/		&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&none	&kp PG_DN
+	&none	&none		&none		&kp C_PREV	&kp C_NEXT	&none		&none	/**/	&none	&kp LC(F)	&kp HOME	&kp END		&none		&none	&none
+				&kp INS		MAC_PSCR	&none		&kp LG(RET)	&none	/**/	&none	&none		&none		&none		&none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -88,11 +88,11 @@
 // 	|       |       |       |       |       |       |       /*    */        |       |   1   |   2   |   3   |       |       |
 // 	                |       |       |       |       |       /*    */        |   0   |       |       |       |      
             bindings = <
-	&none		&none		&none		&none		&none		&none			/**/			&none		&none		&none		&none		&none		&none
-	&none		&none		&none		&none		&none		&none			/**/			&none		&kp N7		&kp N8		&kp N9		&none		&none
-	&none		&none		&none		&none		&none		&none			/**/			&none		&kp N4		&kp N5		&kp N6		&none		&none
-	&none		&none		&none		&none		&none		&none		&none	/**/	&none		&none		&kp N1		&kp N2		&kp N3		&none		&none
-					&none		&none		&none		&none		&none	/**/	&none		&kp N0		&none		&none		&none
+	&none	&none	&none	&none	&none	&none		/**/		&none	&none	&none	&none	&none	&none
+	&none	&none	&none	&none	&none	&none		/**/		&none	&kp N7	&kp N8	&kp N9	&none	&none
+	&none	&none	&none	&none	&none	&none		/**/		&none	&kp N4	&kp N5	&kp N6	&none	&none
+	&none	&none	&none	&none	&none	&none	&none	/**/	&none	&none	&kp N1	&kp N2	&kp N3	&none	&none
+			&none	&none	&none	&none	&none	/**/	&none	&kp N0	&none	&none	&none
             >;
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
